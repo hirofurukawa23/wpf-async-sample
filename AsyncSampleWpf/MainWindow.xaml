@@ -1,0 +1,41 @@
+﻿<Window x:Class="AsyncSampleWpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="250" Width="400">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <Button Width="250"
+                    Margin="0,10,0,0"
+                    Height="24"
+                    x:Name="NormalStart"
+                    Content="同期処理スタート"
+                    Click="NormalStart_Click" />
+            <Button Width="250"
+                    Margin="0,10,0,0"
+                    Height="24"
+                    x:Name="AsyncStart"
+                    Content="非同期処理スタート"
+                    Click="AsyncStart_Click" />
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
+                <TextBox Margin="0,0,0,0"
+                         x:Name="Status"
+                         Width="200"
+                         Height="24"
+                         TextAlignment="Left"
+                         VerticalContentAlignment="Center"
+                         IsReadOnly="True"
+                         BorderBrush="LightGray"/>
+                <Button x:Name="ClearStatus"
+                        Margin="0,0,0,0"
+                        Width="50"
+                        Height="24"
+                        Content="クリア"
+                        Click="ClearStatus_Click"/>
+            </StackPanel>
+
+        </StackPanel>
+    </Grid>
+</Window>
