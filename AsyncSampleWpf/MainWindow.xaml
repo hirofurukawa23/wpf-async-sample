@@ -16,9 +16,15 @@
             <Button Width="250"
                     Margin="0,10,0,0"
                     Height="24"
-                    x:Name="AsyncStart"
-                    Content="非同期処理スタート"
+                    x:Name="AsyncStart1"
+                    Content="非同期処理１スタート"
                     Click="AsyncStart_Click" />
+            <Button Width="250"
+                    Margin="0,10,0,0"
+                    Height="24"
+                    x:Name="AsyncStart2"
+                    Content="非同期処理２スタート"
+                    Click="AsyncStart2_Click"/>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
                 <TextBox Margin="0,0,0,0"
                          x:Name="Status"
